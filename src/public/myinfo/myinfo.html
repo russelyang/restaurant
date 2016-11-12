@@ -1,0 +1,13 @@
+<div class="container">
+    <legend> My Info </legend>
+    <div ng-if="!isRegistered">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!.</a></div>
+    <div ng-if="isRegistered">
+        <div> First Name: {{user.firstname}} </div>
+        <div> Last Name: {{user.lastname}} </div>
+        <div> Email: {{user.email}}</div>
+        <div> Phone: {{user.phone}}</div>
+        <br>
+        <menu-item menu-item="menuItem">
+        </menu-item>
+    </div>
+</div>

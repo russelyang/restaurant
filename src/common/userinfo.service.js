@@ -13,8 +13,14 @@
             users.push(user);
         };
 
-        service.isRegister = function(user) {
+        service.isRegistered = function(user) {
             return users.length > 0;
+        };
+
+        service.getUser = function(email) {
+            return users[users.length-1];
         }
+
+
     }
 })();

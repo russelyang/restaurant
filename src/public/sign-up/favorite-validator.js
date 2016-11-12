@@ -11,7 +11,7 @@
             require: 'ngModel', 
             link: function(scope, element, attrs, ngModel) {
                 ngModel.$asyncValidators.favorite = function(modelValue, viewValue) {
-                   return MenuService.hasMenuItem(viewValue); 
+                   return MenuService.getMenuItem(viewValue); 
                 }
             }
         }
